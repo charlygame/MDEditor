@@ -1,0 +1,2 @@
+// 编辑区域
+const EDITOR_TEXT_CHANGE = 'EDITOR_TEXT_CHANGE'

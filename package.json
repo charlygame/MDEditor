@@ -1,0 +1,30 @@
+{
+  "name": "mdeditor",
+  "version": "0.0.1",
+  "description": "markdown language Editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.js --open",
+    "build": "webpack --config webpack.config.js -p --progress --colors"
+  },
+  "author": "charly",
+  "license": "MIT",
+  "dependencies": {
+    "codemirror": "^5.52.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.0.2",
+    "redux": "^4.0.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
