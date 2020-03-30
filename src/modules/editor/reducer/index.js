@@ -1,3 +1,4 @@
+import {EDITOR_TEXT_CHANGE} from '../../../constants/actionTypes';
 // 初始化数据
 const initState = {
     content: ''
