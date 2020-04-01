@@ -8,22 +8,26 @@ import 'codemirror/keymap/vim';
 import 'codemirror/mode/markdown/markdown.js';
 import { useDispatch } from 'react-redux';
 import {changeContent} from '../editor/actions/index';
+import EditorBottomBar from './components/bottombar';
+import './index.less';
 
 export default function Editor(props) {
     const dispatch = useDispatch();
 
-    return <CodeMirror
-        value=''
-        options={{
-            mode: 'markdown',
-            lineNumbers: true,
-            keyMap: 'vim'
-            
-        }}
-        onChange = {(editor, data, value) => {
-            console.log(value);
-            // 发送action 到reducer
-            dispatch(changeContent(value));
-        }}
-    />
+    return <div className="editor-container">
+            <CodeMirror
+            value=''
+            options={{
+                mode: 'markdown',
+                lineNumbers: true,
+                keyMap: 'vim'
+                
+            }}
+            onChange = {(editor, data, value) => {
+                console.log(value);
+                // 发送action 到reducer
+                dispatch(changeContent(value));
+            }}/>
+        <EditorBottomBar></EditorBottomBar>
+    </div> 
 }
