@@ -19,7 +19,7 @@ export default function Editor(props) {
             value=''
             options={{
                 mode: 'markdown',
-                lineNumbers: true,
+                // lineNumbers: true,
                 keyMap: 'vim'
                 
             }}
