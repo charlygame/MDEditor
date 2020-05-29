@@ -24,7 +24,8 @@ export default function Editor(props) {
                 
             }}
             onChange = {(editor, data, value) => {
-                console.log(value);
+                // console.log(JSON.stringify(value));
+                // console.log(value);
                 // 发送action 到reducer
                 dispatch(changeContent(value));
             }}/>
